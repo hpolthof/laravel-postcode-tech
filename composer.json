@@ -1,0 +1,46 @@
+{
+  "name": "hpolthof/laravel-postcode-tech",
+  "description": "Package to use postcode.tech with Laravel.",
+  "type": "library",
+  "license": "gpl-3.0",
+  "authors": [
+    {
+      "name": "Paul Olthof",
+      "email": "hi@olthof.tech"
+    }
+  ],
+  "homepage": "https://postcode.tech",
+
+  "require": {
+    "php": "^7.3",
+    "laravel/framework": "^6.0",
+    "hpolthof/postcode-tech": "^1.0"
+  },
+
+  "require-dev": {
+    "orchestra/testbench": "^4.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Hpolthof\\LaravelPostcodeTech\\": "src/"
+    }
+  },
+
+  "autoload-dev": {
+    "psr-4": {
+      "Hpolthof\\LaravelPostcodeTech\\Tests\\": "tests/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hpolthof\\LaravelPostcodeTech\\Providers\\ServiceProvider"
+      ],
+      "aliases": {
+        "Postcode": "Hpolthof\\LaravelPostcodeTech\\PostcodeFacade"
+      }
+    }
+  }
+}

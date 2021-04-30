@@ -12,8 +12,8 @@
   "homepage": "https://postcode.tech",
 
   "require": {
-    "php": "^7.3",
-    "laravel/framework": "^6.0|^7.0",
+    "php": "^7.3|^8.0",
+    "laravel/framework": "^6.0|^7.0|^8.0",
     "hpolthof/postcode-tech": "^1.0"
   },
 
